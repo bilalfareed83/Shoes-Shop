@@ -12,7 +12,7 @@ export const Products = () => {
         {shoe.map((item) => {
           const shoe = shoes[item];
           return (
-            <Link key={item} to={`/products/${item}`} className="shoeDisplay">
+            <Link key={item} to={`/${item}`} className="shoeDisplay">
               <h4>{shoe.name}</h4>
               <img src={shoe.img} style={{ height: 150 }} />
             </Link>

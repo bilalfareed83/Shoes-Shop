@@ -1,6 +1,7 @@
 import React from "react";
 import shoes from "../shoesData.json";
 import { useParams, Link } from "react-router-dom";
+import { Button } from "@material-ui/core";
 
 export const ProductsItem = () => {
   const { id } = useParams();
@@ -14,10 +15,10 @@ export const ProductsItem = () => {
         <img src={shoe.img} style={{ height: 300 }} />
       </div>
       <Link
-        to="/products"
+        to="/"
         style={{ textDecoration: "none", color: "black", cursor: "pointer" }}
       >
-        Back
+        <Button variant="outlined">Back</Button>
       </Link>
     </div>
   );
