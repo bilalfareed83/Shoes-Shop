@@ -1,38 +1,37 @@
-.App {
+body {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.shoeDisplay {
+  text-align: center;
+  text-decoration: none;
+  color: #1a1816;
+  box-shadow: 0 0 10px #1a1816;
+  margin: 10px;
+  width: 250px;
+}
+
+.shoeDisplay:hover {
+  box-shadow: 0 0 5px #1a1816;
+}
+
+.container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  /* justify-items: center;
+  align-items: center; */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shoeSelect {
+  text-align: center;
+  text-decoration: none;
+  color: #1a1816;
+  box-shadow: 0 0 10px #1a1816;
+  margin: 10px;
+  width: 400px;
 }
