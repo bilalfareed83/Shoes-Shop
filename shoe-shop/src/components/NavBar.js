@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
   backgroungApp: {
     backgroundColor: "#f2f2f2",
     textDecoration: "none",
+    position: "fixed",
   },
 }));
 

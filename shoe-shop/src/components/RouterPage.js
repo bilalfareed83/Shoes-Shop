@@ -4,18 +4,23 @@ import { Products } from "./Products";
 import { ProductsItem } from "./ProductsItem";
 import { Home } from "./Home";
 import NavBar from "./NavBar";
-
+import ShoesSlide from "./AnimetionComponent/Slide";
+import AnimatedText from "./AnimetionComponent/Text";
+import Buttom from "./Bottom";
 export const RouterPage = () => {
   return (
     <div>
       <Router>
         <NavBar />
+        <ShoesSlide />
+        <AnimatedText />
         <Switch>
           {/* <Route path="/" exact component={Home} /> */}
           <Route path="/" exact component={Products} />
           <Route path="/:id" exact component={ProductsItem} />
         </Switch>
       </Router>
+      <Buttom />
     </div>
   );
 };
