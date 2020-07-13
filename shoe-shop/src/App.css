@@ -44,6 +44,16 @@ body {
 
 .item-div {
   display: flex;
-  align-content: space-between;
-  justify-content: space-between;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.input-div {
+  padding: 10px;
+  padding-left: 20px;
+  width: 400px;
+  height: 27px;
+  background: transparent;
+  border: none;
+  box-shadow: 0 0 5px;
 }

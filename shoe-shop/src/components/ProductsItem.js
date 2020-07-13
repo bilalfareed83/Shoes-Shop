@@ -45,11 +45,32 @@ export const ProductsItem = () => {
 
         <div>
           <h1>form</h1>
-          <input />
+          <input placeholder="Name" className="input-div" />
           <br />
           <br />
-          <input />
+          <input placeholder="Email" className="input-div" />
+          <br />
+          <br />
+          <input placeholder="Mobile" className="input-div" />
+          <br />
+          <br />
+          <input placeholder="Address" className="input-div" />
+          <br />
+          <br />
+          <input placeholder="Qty." className="input-div" />
         </div>
+      </div>
+      <div>
+        <Link
+          to="/"
+          style={{
+            textDecoration: 'none',
+            color: 'black',
+            cursor: 'pointer',
+          }}
+        >
+          <Button variant="outlined">Back</Button>
+        </Link>
       </div>
     </div>
   );
