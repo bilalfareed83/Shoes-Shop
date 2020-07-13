@@ -1,16 +1,16 @@
 import React from 'react';
-import shoes from '../shoesData.json';
-import { Link } from 'react-router-dom';
-import { Slide } from '@material-ui/core';
-import Slides from 'react-reveal/Slide';
+// import shoes from "../shoesData.json";
+// import { Link } from "react-router-dom";
+// import { Slide } from "@material-ui/core";
+// import Slides from "react-reveal/Slide";
 // import "../App.css";
 
-export const Products = () => {
-  const shoe = Object.keys(shoes);
+export const NotFound = () => {
+  //   const shoe = Object.keys(shoes);
   return (
     <div className="container">
-      <Slides left>
-        <h3 style={{ color: '#2e303e' }}>New Arrival</h3>
+      {/* <Slides left>
+        <h3 style={{ color: "#2e303e" }}>New Arrival</h3>
       </Slides>
 
       <Slides right>
@@ -19,13 +19,14 @@ export const Products = () => {
             const shoe = shoes[item];
             return (
               <Link key={item} to={`/${item}`} className="shoeDisplay">
-                <h4 style={{ color: '#2e303e' }}>{shoe.name}</h4>
+                <h4 style={{ color: "#2e303e" }}>{shoe.name}</h4>
                 <img src={shoe.img} style={{ height: 400 }} />
               </Link>
             );
           })}
         </div>
-      </Slides>
+      </Slides> */}
+      <h3>Product not found</h3>
     </div>
   );
 };

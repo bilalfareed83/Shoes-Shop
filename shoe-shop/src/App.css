@@ -32,12 +32,18 @@ body {
   text-decoration: none;
   color: #262626;
   box-shadow: 0 0 10px #1a1816;
-  margin: 10px;
+  margin: 20px;
   width: 400px;
 }
 
 .buttom {
   width: 100vw;
-  height: 300px;
+  height: 150px;
   background-color: #2e303e;
+}
+
+.item-div {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
 }
