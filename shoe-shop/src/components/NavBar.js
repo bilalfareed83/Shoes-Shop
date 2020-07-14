@@ -38,14 +38,32 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar position="static" className={classes.backgroungApp}>
         <Toolbar>
-          {/* <Link to="/">
+          <div>
+            <Typography
+              variant="h5"
+              style={{
+                backgroundColor: "#f2f2f2",
+                color: "#2e303e",
+                textAlign: "center",
+                // paddingLeft: "130px",
+              }}
+            >
+              Flash Shoes
+            </Typography>
+          </div>
+          <Link to="/">
             <Button color="inherit" className={classes.textButton}>
               Home
             </Button>
-          </Link> */}
+          </Link>
           <Link to="/">
             <Button color="inherit" className={classes.textButton}>
               Products
+            </Button>
+          </Link>
+          <Link to="/">
+            <Button color="inherit" className={classes.textButton}>
+              About us
             </Button>
           </Link>
         </Toolbar>
@@ -53,18 +71,3 @@ export default function ButtonAppBar() {
     </div>
   );
 }
-
-// import React from "react";
-// import { Link } from "react-router-dom";
-
-// const NavBar = () => {
-//   return (
-//     <div className="container">
-//       <Link to="/">Home</Link>
-//       <Link to="/products">Products</Link>
-//       {/* <Link to="/">Home</Link> */}
-//     </div>
-//   );
-// };
-
-// export default NavBar;
