@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import { useTrail, animated } from "react-spring";
 import "./styles.css";
 
-const items = ["QUALITY", "Trustworthy", "LOYALITY", "IT'S ALL ABOUT YOU..!"];
+const items = ["QUALITY", "Trustworthy", "IT'S ALL ABOUT YOU..!"];
 const config = { mass: 5, tension: 2000, friction: 200 };
 
 function AnimatedText() {

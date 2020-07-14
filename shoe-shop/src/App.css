@@ -8,12 +8,15 @@ body {
   text-align: center;
   text-decoration: none;
   color: #1a1816;
-  box-shadow: 0 0 10px #1a1816;
+  /* border: solid rgba(#000, 0.03); */
+  /* box-shadow: 0 0 10px #1a1816; */
+  box-shadow: 2px 2px 5px rgba(#000, 0.2), 2px 2px 17px rgba(#000, 0.35),
+    2px 2px 25px rgba(#000, 0.5);
   margin: 10px;
   width: 600px;
 }
 
-.shoeDisplay:hover {
+.div-img:hover {
   box-shadow: 0 0 5px #1a1816;
 }
 
