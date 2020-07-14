@@ -24,14 +24,14 @@ jobs:
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v2-beta
+        with:
+          version: 12
 
-        # with:
-        # version: 12
       - name: install dependencies
-        run: npm i
+        run: npm install
 
-      - name: cretea build
-        run: npm build
+      - name: create build
+        run: npm run build
 
       - name: insatll surge globally
         run: npm i -g surge
