@@ -1,6 +1,6 @@
 body {
   width: 100vw;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .shoeDisplay {
@@ -52,6 +52,7 @@ body {
 
 .item-div {
   display: flex;
+  flex-wrap: wrap;
   align-content: space-around;
   justify-content: space-around;
 }

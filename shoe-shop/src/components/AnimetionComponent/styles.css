@@ -65,6 +65,8 @@ body {
   text-transform: uppercase;
   will-change: transform, opacity;
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .trails-text > div {
