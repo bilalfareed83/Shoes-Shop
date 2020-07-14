@@ -10,29 +10,6 @@ export const ProductsItem = () => {
 
   return (
     <div className="container">
-      {/* <Slide left>
-        <h3 style={{ color: '#2e303e' }}>Shoe you like</h3>
-      </Slide>
-
-      <div>
-        <Slide right>
-          <div className="shoeSelect">
-            <h4 style={{ color: '#2e303e', padding: '20px' }}>{shoe.name}</h4>
-            <img src={shoe.img} style={{ height: 300 }} />
-          </div>
-
-          <Link
-            to="/"
-            style={{
-              textDecoration: 'none',
-              color: 'black',
-              cursor: 'pointer',
-            }}
-          >
-            <Button variant="outlined">Back</Button>
-          </Link>
-        </Slide>
-      </div> */}
       <div>
         <Slide right>
           <h3 style={{ color: "#2e303e" }}>Shoe you like</h3>
@@ -61,7 +38,7 @@ export const ProductsItem = () => {
         <Slide right>
           <div>
             <h3 style={{ color: "#2e303e" }}>Custom Detail Form</h3>
-            <form>
+            <form onSubmit={}>
               <input placeholder="Name" className="input-div" />
               <br />
               <br />
@@ -77,7 +54,9 @@ export const ProductsItem = () => {
               <input placeholder="Qty." className="input-div" />
               <br />
               <br />
-              <Button variant="outlined">Place Order</Button>
+              <Button variant="outlined" type="submit">
+                Place Order
+              </Button>
             </form>
           </div>
         </Slide>
