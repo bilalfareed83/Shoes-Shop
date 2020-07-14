@@ -24,9 +24,9 @@ jobs:
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v2-beta
-
-        # with:
+        with:
         version: 12
+
       - name: install dependencies
         run: npm i
 
