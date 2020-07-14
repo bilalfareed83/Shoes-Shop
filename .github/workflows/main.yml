@@ -22,6 +22,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      - uses: actions/checkout@v2
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v2-beta
         with:
@@ -31,10 +33,10 @@ jobs:
         run: npm install
 
       - name: create build
-        run: npm build
+        run: npm run build
 
       - name: insatll surge globally
         run: npm i -g surge
 
       - name: deploying on surge
-        run: surge ./build dependent-oil.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./build shoe-shop-bilal.surge.sh --token ${{secrets.SURGE_TOKEN}}
